@@ -1,6 +1,12 @@
+
+
 a { color: inherit; 
     text-decoration:none; 
 } 
+
+a:hover {
+    color: #FF5B5B
+}
 
 body {
     background-color: #EDF1F6  ;
