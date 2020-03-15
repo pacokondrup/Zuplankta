@@ -10,12 +10,10 @@ a:hover {
 }
 
 body {
-    background-color: #EDF1F6  ;
+    background-color: #EDF1F6;
+    background-size: cover;
 }
 
-html {
-    overflow-y:scroll;
-}
 
 .zoom {
   transition: transform .2s; /* Animation */
