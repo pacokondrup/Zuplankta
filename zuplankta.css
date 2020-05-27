@@ -18,7 +18,6 @@ body {
     background-size: cover;
 }
 
-
 .zoom {
   transition: transform .2s; /* Animation */
 }
@@ -35,14 +34,14 @@ body {
 
 /* Create four equal columns that sits next to each other */
 .column {
-  flex: 24.4%;
-  max-width: 24.4%;
-  padding: 0 4px;
+  flex: 50%;
+  max-width: 25%;
+  padding: 0px;
 }
 
 .column img {
   margin-top: 80px;
-  vertical-align: middle;
+  vertical-align: center;
   width: 100%;
 }
 
