@@ -105,6 +105,10 @@ body {
   }
 }
 
-.blooomf {
-    
+.column:hover .bg {
+  background: #ffca6d;
+}
+
+.other-resources {
+    text-align: center;
 }
