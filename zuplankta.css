@@ -8,6 +8,47 @@ html {
     padding-bottom: 60px;
 }
 
+/*for About page center align "Resources for diverse HUMAN scale figures"*/
+.other-resources {
+    text-align: center;
+}
+
+/*COLUMN1*/
+.first-column {
+    overflow:hidden;
+}
+
+/*to destroy any list bulletpoints*/
+li {
+    list-style: none;
+}
+
+/*For the background transition properties*/
+.bg {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: .25s;
+  pointer-events: none;
+}
+
+.first-column li: first-child:hover ~ .bg{
+    background: #ffca6d;
+}
+.first-column li: nth-child(2):hover ~ .bg{
+    background: #ff6d6d;
+}
+
+
+
+
+
+
+
+
 a { color: inherit; 
     text-decoration:none; 
 }
@@ -57,13 +98,8 @@ body {
     padding-left: 60px;
 }
 
-.bg {
-    position: fixed;
-    transition: .5s;
-}
-
 .zoom {
-  transition: transform .2s; /* Animation */
+  transition: transform .25s; /* Animation */
 }
 
 .zoom:hover {
@@ -103,12 +139,6 @@ body {
     flex: 100%;
     max-width: 100%;
   }
-}
 
-.column:hover .bg {
-  background: #ffca6d;
-}
 
-.other-resources {
-    text-align: center;
-}
+
