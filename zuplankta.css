@@ -8,14 +8,22 @@ html {
     padding-bottom: 60px;
 }
 
-/*for About page center align "Resources for diverse HUMAN scale figures"*/
-.other-resources {
-    text-align: center;
+body {
+    background-color: #EDF1F6;
+    background-size: cover;
+    padding-left: 60px;
 }
 
-/*COLUMN1*/
-.first-column {
-    overflow:hidden;
+/*For the background transition properties*/
+.bg {
+  position: fixed;
+  z-index: -1;
+  top: 100%;
+  right: 100%;
+  bottom: 100%;
+  left: 100%;
+  transition: .25s;
+  pointer-events: none;
 }
 
 /*to destroy any list bulletpoints*/
@@ -23,34 +31,19 @@ li {
     list-style: none;
 }
 
-/*For the background transition properties*/
-.bg {
-  position: fixed;
-  z-index: -1;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  transition: .25s;
-  pointer-events: none;
+/*for About page center align "Resources for diverse HUMAN scale figures"*/
+.other-resources {
+    text-align: center;
 }
 
-.first-column li: first-child:hover ~ .bg{
-    background: #ffca6d;
+/*COLUMN1*/
+.first-column {
+    overflow: hidden;
+    position: relative;
 }
-.first-column li: nth-child(2):hover ~ .bg{
-    background: #ff6d6d;
-}
-
-
-
-
-
-
-
 
 a { color: inherit; 
-    text-decoration:none; 
+    text-decoration: none; 
 }
 
 a:hover {
@@ -62,6 +55,13 @@ a:hover {
     font-size: 40px;
     font-weight: bold;
     color: #FF5B5B;
+}
+
+.first-column li: first-child:hover .bg{
+    background: #ffca6d;
+}
+.first-column li: nth-child(2):hover .bg{
+    background: #ff6d6d;
 }
 
 /*main menu*/
@@ -92,18 +92,26 @@ a:hover {
     margin-right: auto;
 }
 
-body {
-    background-color: #EDF1F6;
-    background-size: cover;
-    padding-left: 60px;
-}
-
 .zoom {
   transition: transform .25s; /* Animation */
 }
 
 .zoom:hover {
   transform: scale(1.1); /* Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.sneak {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    overflow: hidden;
+}
+
+.hide {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    display: none;
 }
 
 .row {
@@ -125,6 +133,14 @@ body {
   width: 100%;
 }
 
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
   .column {
@@ -132,13 +148,3 @@ body {
     max-width: 50%;
   }
 }
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    flex: 100%;
-    max-width: 100%;
-  }
-
-
-
