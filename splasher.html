@@ -12,7 +12,12 @@
 
          <!--randomize detective-->
          <img id='random'/>
+        
+         <!-- hide the broken link (?) -->
+         <img src="Error.src" onerror="this.style.display='none'"/>
 
+        
+        
          <script>
         //randomize background
         $(document).ready(function() {  
@@ -37,11 +42,11 @@
         var image = new Array ();
         
         image[0] = '<div class="sneak"> <a href="http://www.zuplankta.com/index.html"> <img border=0 src="pngs/xdetective/detectiveyap.png"></a> </div>';
-        image[1] = '<div class="hide"> <a href="http://www.zuplankta.com/index.html"> <img border=0 src="pngs/xdetective/detectiveyap.png"></a> </div>';
-        image[2] = '<div class="hide"> <a href="http://www.zuplankta.com/index.html"> <img border=0 src="pngs/xdetective/detectiveyap.png"></a> </div>';
-        image[3] = '<div class="hide"> <a href="http://www.zuplankta.com/index.html"> <img border=0 src="pngs/xdetective/detectiveyap.png"></a> </div>';
-        image[4] = '<div class="hide"> <a href="http://www.zuplankta.com/index.html"> <img border=0 src="pngs/xdetective/detectiveyap.png"></a> </div>';
-        image[5] = '<div class="hide"> <a href="http://www.zuplankta.com/index.html"> <img border=0 src="pngs/xdetective/detectiveyap.png"></a> </div>';
+        image[1] = '<div class="hide"> <a href="http://www.zuplankta.com/index.html"> <img border=0 src="pngs/xdetective/none.png"></a> </div>';
+        image[2] = '<div class="hide"> <a href="http://www.zuplankta.com/index.html"> <img border=0 src="pngs/xdetective/none.png"></a> </div>';
+        image[3] = '<div class="hide"> <a href="http://www.zuplankta.com/index.html"> <img border=0 src="pngs/xdetective/none.png"></a> </div>';
+        image[4] = '<div class="hide"> <a href="http://www.zuplankta.com/index.html"> <img border=0 src="pngs/xdetective/none.png"></a> </div>';
+        image[5] = '<div class="hide"> <a href="http://www.zuplankta.com/index.html"> <img border=0 src="pngs/xdetective/none.png"></a> </div>';
 
         
         var size = image.length
@@ -50,13 +55,14 @@
         $('#random').attr('src',image[x]);
         document.write(image[x])
 
-             
+
 
         //end randomize detective
          
-     </script>
+    </script>
 
-     
+    <img src="Error.src" onerror="this.style.display='none'"/>
+
     </head>
     
     <body>
