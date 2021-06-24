@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    background-color: #EDF1F6;
+    background-color: #33062b;
     background-size: cover;
     padding-left: 60px;
 }
@@ -48,14 +48,14 @@ a { color: inherit;
 }
 
 a:hover {
-    color: #FF5B5B
+    color: #fff7cc
 }
 
 /*Zuplankta big red letters */
 .header {
     font-size: 40px;
     font-weight: bold;
-    color: #FF5B5B;
+    color: #fff7cc;
 }
 
 .first-column li: first-child:hover .bg{
