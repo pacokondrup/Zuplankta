@@ -130,6 +130,7 @@ a:hover {
   flex: 1;
   max-width: 24%;
   padding: 0px;
+  margin: auto;
 }
 
 .column img {
